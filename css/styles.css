@@ -82,7 +82,7 @@ h1{
 
 #carrousel{
     grid-area: carrousel;
-    /*z-index: -1;*/
+    /*z-index: -1; si lo pongo desaparecen los botones del carrousel debajo del menu de navegacion q esta fixed pero los botones no tiene más su funcion de cambiar de slide*/
 }
 
 #carouselExampleIndicators{
@@ -142,7 +142,6 @@ footer{
 
 @media screen and (max-width:1270px) {
     header{
-        
         display: flex;
         flex-direction: column;
         justify-content: column;
@@ -164,7 +163,6 @@ footer{
     }
     #carouselExampleIndicators{
         width:23%;
-        margin: 0 auto;
     }
     h1{
         font-size: 2rem;
@@ -174,10 +172,6 @@ footer{
     }
     h3{
         font-size: 1.3rem;
-    }
-    .bordeAdoptante{
-        width: 15%;
-       
     }
 }
 @media screen and (max-width:1040px) {
@@ -217,12 +211,13 @@ footer{
         margin-left: 8rem;
         margin-right:8rem;
         gap: 10rem;
+        padding: 1.5rem;
     }
     #ulnav li{
         font-size: 1.3rem;
     }
     h1{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     h2{
         font-size: 1.5rem;
@@ -235,12 +230,120 @@ footer{
     }
 }
 
-    
+@media screen and (max-width:915px) {
+    #ulnav{
+        margin-left: 7rem;
+        margin-right:7rem;
+    }
+    #ulnav li{
+        font-size: 1.3rem;
+    }
+    h1{
+        font-size: 1.8rem;
+        margin-top: 6rem;
+    }    
+    .testimonioAdoptante{
+        font-size: 1rem;
+    }
+}
 
+@media screen and (max-width:895px) {
+    #ulnav{
+        margin-left: 2rem;
+        margin-right:2rem;
+        padding: 1.5rem;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+}
 
-
-
-
+@media screen and (max-width:785px) {
+    .logo{
+        width:7rem;
+        height:5rem;
+    }
+    #ulnav{
+        margin-left: 0.5rem;
+        margin-right:0.5rem;
+        padding: 1rem;
+    }
+    #ulnav li{
+        font-size: 1rem;
+    }
+    #grillaIndex{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px auto 50px;
+        grid-template-areas: 
+        "header header"
+        "carrousel carrousel"
+        "adoptantes adoptantes"
+        "footer footer";
+    }
+    .adoptantesFotos{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    h1{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+    h2{
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    .testimonioAdoptante{
+        font-size: 0.8rem;
+    }
+}
+/*me falta hacer celular
+@media screen and (max-width:479px) {
+    .logo{
+        width:7rem;
+        height:5rem;
+    }
+    #ulnav{
+        margin-left: 0.5rem;
+        margin-right:0.5rem;
+        padding: 1rem;
+    }
+    #ulnav li{
+        font-size: 1rem;
+    }
+    #grillaIndex{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px auto 50px;
+        grid-template-areas: 
+        "header header"
+        "carrousel carrousel"
+        "adoptantes adoptantes"
+        "footer footer";
+    }
+    .adoptantesFotos{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+     
+    h1{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+    h2{
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    .testimonioAdoptante{
+        font-size: 0.8rem;
+    }
+}*/
 
 /*
 .donacion{
