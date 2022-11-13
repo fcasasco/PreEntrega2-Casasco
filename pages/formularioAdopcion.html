@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/FAVICON fundacion can.jpg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>FormularioAdopcion</title>
+</head>
+<body>
+    <header>
+        <!--LOGO-->
+        <img class="logo" src="../img/FUNDACION CAN LOGO.jpg"" alt="Logo Fundacion CAN">
+        <nav>
+            <ul id="ulnav">
+                <li>
+                    <a href="../index.html">Inicio</a> 
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="formularioAdopcion.html">Formulario de adopción</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form id="formAdopcion">
+            <h1>Formulario de adopción</h1>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <p>Selecciona el sexo del perro:</p>
+                
+                <label for="hembra">Hembra</label>
+                <input type="radio" name="sexo" id="hembra"required>
+            
+                <label for="macho">Macho</label>
+                <input type="radio" name="sexo" id="macho"required>
+
+                <label for="indistinto">Indistinto</label>
+                <input type="radio" name="sexo" id="indistinto"required>
+            </div>
+            <div>
+                <p>Tamaño del perro (marque una o varias opciones):</p>
+
+                <label for="chico">Chico</label>
+                <input type="checkbox" id="chico">
+
+                <label for="mediano">Mediano</label>
+                <input type="checkbox" id="mediano">
+
+                <label for="grande">Grande</label>
+                <input type="checkbox" id="grande">
+            </div>
+            <div>
+                <label for="select">¿Adoptarias a un perro con algun tipo de discapacidad?</label>
+                <select id="select" required>
+                    <option>Selecciona una opción</option>
+                    <option>Si</option>
+                    <option>No</option>
+                    <option>Indistinto</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Dejanos un mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10" maxlength="500"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar Formulario">
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Fundación CAN-sin fines de lucro. Esta fundación no es real, es un sitio web ilustrativo para curso de desarrollo web.</p>
+    </footer>
+</body>
+</html>
