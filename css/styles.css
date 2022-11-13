@@ -82,10 +82,9 @@ h1{
 
 #carrousel{
     grid-area: carrousel;
-    /*z-index: -1; si lo pongo desaparecen los botones del carrousel debajo del menu de navegacion q esta fixed pero los botones no tiene más su funcion de cambiar de slide*/
 }
 
-#carouselExampleIndicators{
+#carouselExampleIndicators{/*ver si puedo ponerle transform scale*/
     width:24%;
     margin: 0 auto;
 }
@@ -138,7 +137,7 @@ footer{
     flex-wrap: wrap;
 }
 
-/*MEDIA QUERY*/
+/*MEDIA QUERY desde pantalla de televisor hd a celular*/
 
 @media screen and (max-width:1270px) {
     header{
@@ -192,16 +191,20 @@ footer{
         font-size: 1.4rem;
     }
     #carouselExampleIndicators{
-        width:23%;
+        width:30%;
     }
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.7rem;
+        margin-top: 6rem;
     }
     h3{
         font-size: 1.3rem;
+    }
+    .adoptantesFotos{
+        margin-top: 10rem;
     }
     .bordeAdoptante{
         width: 17%;
@@ -220,7 +223,6 @@ footer{
     #ulnav li{
         font-size: 1.3rem;
     }
-
     #ulnav li a:hover{
         padding: 1rem;
     }
@@ -282,7 +284,7 @@ footer{
         "carrousel carrousel"
         "adoptantes adoptantes"
         "footer footer";
-        grid-template-rows: 125px 350px 600px 50px;
+        grid-template-rows: 125px 350px auto 50px;
     }
     #ulnav{
         margin-left: 2rem;
@@ -290,6 +292,9 @@ footer{
     }
     h1{
         font-size: 1.7rem;
+    }
+    #adoptantes{
+        margin-bottom: 30rem;
     }
     .transformAdoptante1{
         transform:translate(10rem, 2rem)rotate(-5deg);
@@ -305,7 +310,7 @@ footer{
     }
 }
 
-@media screen and (max-width:775px) {
+@media screen and (max-width:768px) {
     #grillaIndex {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -320,7 +325,6 @@ footer{
         margin-right:0.5rem;
         padding: 1rem;
         gap:2rem;
-        
     }
     #ulnav li{
         font-size: 1rem;
@@ -330,88 +334,79 @@ footer{
         margin-top: 3rem;
     }
     h2{
-        margin-top: 3rem;
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
     h3{
         font-size: 1.1rem;
-    }
-    .testimonioAdoptante{
-        font-size: 0.8rem;
-    }
-}
-@media screen and (max-width:673px) {
-    #ulnav{
-        margin-left: 0.2rem;
-        margin-right:0.2rem;
-        
-    }
-    #ulnav li{
-        font-size: 1rem;
-    }
-    h1{
-        font-size: 1.2rem;
-        margin-top: 3rem;
-    }
-    h2{
-        margin-top: 2rem;
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-    }
-    h3{
-        font-size: 1rem;
-    }
-    .testimonioAdoptante{
-        font-size: 0.7rem;
-    }
-    footer{
-        font-size:0.6rem ;
-    }
-}
-/*me falta hacer celular
-@media screen and (max-width:479px) {
-    .logo{
-        width:7rem;
-        height:5rem;
-    }
-    #ulnav{
-        margin-left: 0.5rem;
-        margin-right:0.5rem;
-        padding: 1rem;
-    }
-    #ulnav li{
-        font-size: 1rem;
-    }
-      #grillaIndex{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 400px 400px auto;
-        grid-template-areas: 
-        "header header"
-        "carrousel carrousel"
-        "adoptantes adoptantes"
-        "footer footer";
     }
     .adoptantesFotos{
         flex-direction: column;
-        row-gap: 2rem;
+        gap: 2rem;
+        margin-top: 5rem;
     }
-    h1{
-        font-size: 1.4rem;
-        margin-top: 3rem;
+    .bordeAdoptante{
+        border: solid .4rem #d81159;
+    }
+    .transformAdoptante1{
+        transform:translate(0rem, 0rem)rotate(0deg);
+    }
+    .transformAdoptante2{
+        transform: translateY(0rem) scale(1,1);
+    }
+    .transformAdoptante3{
+        transform: translate(0rem, 0rem)rotate(0deg);
+    }
+}
+@media screen and (max-width:673px){
+    #grillaIndex {
+        grid-template-rows: 125px 300px auto 50px;
+    }
+    #carouselExampleIndicators{
+        width:40%;
     }
     h2{
-        margin-top: 3rem;
+        margin-top: 8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width:399px) {
+    #grillaIndex {
+        grid-template-rows: 100px 260px auto 40px;
+    }
+    #ulnav{
+        flex-direction: column;
+        text-align: center;
+        gap:1rem;
+    }
+    #ulnav li{
+        font-size: 0.8rem;
+        font-weight: 1000;
+    }
+    .logo{
+        height: 5rem;
+        width:6rem;
+    }  
+    #adoptantes{
+        margin-top: 10rem;
+    }
+    h1{
+        margin-top: 12rem;
         font-size: 1.2rem;
-        margin-bottom: 2rem;
+    }
+    h2{
+        margin-top: 4rem;
+        font-size: 1rem;
     }
     h3{
-        font-size: 1.1rem;
-    }
-    .testimonioAdoptante{
         font-size: 0.8rem;
     }
-}*/
+    
+    footer{
+        font-size:0.5rem ;
+    }
+}
+
 
 /*
 .donacion{
