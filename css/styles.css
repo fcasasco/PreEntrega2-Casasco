@@ -54,7 +54,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin-left: 5rem;
-    margin-right:11rem;
+    margin-right:15rem;
     gap: 11rem;
 }
 
@@ -148,20 +148,20 @@ footer{
         flex-wrap: wrap;
     }
     .logo{
-    width:10rem;
+        width:10rem;
     }
     #ulnav{
-        margin-left: 10rem;
+        margin-left: 9rem;
         margin-right:9rem;
-        gap: 10rem;
+        gap: 9rem;
         padding: 2rem;
     }
     #ulnav li{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 1000;
     }
     #carouselExampleIndicators{
-        width:23%;
+        width:25%;
     }
     h1{
         font-size: 2rem;
@@ -170,53 +170,19 @@ footer{
         font-size: 1.7rem;
     }
     h3{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
-@media screen and (max-width:1040px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: column;
-        align-items: center;
-    }
-    .logo{
-    height:8rem;
-    }
-    #ulnav{
-        margin-right:10rem;
-        padding: 1.5rem;
-    }
-    #ulnav li{
-        font-size: 1.4rem;
-    }
-    #carouselExampleIndicators{
-        width:30%;
-    }
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 1.7rem;
-        margin-top: 6rem;
-    }
-    h3{
-        font-size: 1.3rem;
-    }
-    .adoptantesFotos{
-        margin-top: 10rem;
-    }
-    .borde{
-        width: 17%;
-    }
-}
-@media screen and (max-width:1017px) {
+@media screen and (max-width:1024px) {
     #grillaIndex {
         grid-template-rows: 125px 450px auto 50px;
     }
+    .logo{
+        height:8rem;
+    }
     #ulnav{
-        margin-left: 8rem;
         margin-right:8rem;
+        margin-left: 8rem;
         gap: 10rem;
         padding: 1rem;
     }
@@ -226,6 +192,26 @@ footer{
     #ulnav li a:hover{
         padding: 1rem;
     }
+    #carouselExampleIndicators{
+        width:30%;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.6rem;
+        margin-top: 6rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    .borde{
+        border: solid .3rem #d81159;
+        width:17%;
+    }
+    .adoptantesFotos{
+        margin-top: 10rem;
+    }
     .transformAdoptante1{
         transform:rotate(-5deg);
     }
@@ -234,18 +220,6 @@ footer{
     }
     .transformAdoptante3{
         transform: rotate(10deg);
-    }
-    h1{
-        font-size: 1.8rem;
-    }
-    h2{
-        font-size: 1.6rem;
-    }
-    h3{
-        font-size: 1.4rem;
-    }
-    .borde{
-        border: solid .3rem #d81159;
     }
     .testimonioAdoptante{
         font-size: 0.9rem;
@@ -262,17 +236,20 @@ footer{
         font-size: 1.3rem;
     }
     h1{
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         margin-top: 6rem;
     }    
     h2{
-        font-size: 1.4rem;
+        font-size: 2.1rem;
     }
     h3{
         font-size: 1.2rem;
     }
+    .adoptantesFotos{
+        margin-top: 5rem;
+    }
     .testimonioAdoptante{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -290,11 +267,8 @@ footer{
         margin-left: 2rem;
         margin-right:2rem;
     }
-    h1{
-        font-size: 1.7rem;
-    }
-    #adoptantes{
-        margin-bottom: 30rem;
+    h2{
+        margin-top: 10rem;
     }
     .transformAdoptante1{
         transform:translate(10rem, 2rem)rotate(-5deg);
@@ -306,7 +280,10 @@ footer{
         transform: translate(-10rem, -2rem)rotate(10deg);
     }
     .testimonioAdoptante{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+    #adoptantes{
+        margin-bottom: 30rem;
     }
 }
 
@@ -330,20 +307,28 @@ footer{
         font-size: 1rem;
     }
     h1{
-        font-size: 1.4rem;
+        font-size: 2.6rem;
         margin-top: 3rem;
     }
     h2{
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        margin-top: 2rem;
     }
     h3{
-        font-size: 1.1rem;
+        font-size: 1.8rem;
     }
     .adoptantesFotos{
         flex-direction: column;
         gap: 2rem;
         margin-top: 5rem;
+    }
+    .adoptante1, .adoptante3{
+        width:20rem;
+        height: 40rem;
+    }
+    .adoptante2{
+        width:25rem;
+        height:25rem;
     }
     .borde{
         border: solid .4rem #d81159;
@@ -357,17 +342,38 @@ footer{
     .transformAdoptante3{
         transform: translate(0rem, 0rem)rotate(0deg);
     }
+    .testimonioAdoptante{
+        font-size: 1.3rem;
+    }
+    #adoptantes{
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
 }
 @media screen and (max-width:673px){
     #grillaIndex {
-        grid-template-rows: 125px 300px auto 50px;
+        grid-template-rows: 125px 260px auto 50px;
     }
     #carouselExampleIndicators{
-        width:40%;
+        width:43%;
+    }
+    h1{
+        font-size: 2.5rem;
     }
     h2{
-        margin-top: 8rem;
         margin-bottom: 0.5rem;
+        font-size: 2.1rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    .testimonioAdoptante{
+        font-size: 1.2rem;
+    }
+    footer{
+        align-content: center;
+        font-size:1rem;
+        padding: 2rem;
     }
 }
 @media screen and (max-width:399px) {
@@ -380,31 +386,29 @@ footer{
         gap:1rem;
     }
     #ulnav li{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 1000;
     }
     .logo{
         height: 5rem;
         width:6rem;
     }  
+    #carouselExampleIndicators{
+        width:50%;
+    }
     #adoptantes{
         margin-top: 10rem;
-        margin-bottom: 3rem;
     }
     .adoptante1, .adoptante3{
         width:15rem;
         height: 30rem;
-    }
-    .adoptante2{
-        width:25rem;
-        height:25rem;
     }
     h1{
         margin-top: 12rem;
         font-size: 2.4rem;
     }
     h2{
-        margin-top: 4rem;
+        margin-top: 8rem;
         font-size: 2rem;
     }
     h3{
@@ -416,13 +420,7 @@ footer{
     .testimonioAdoptante{
         font-size: 1rem;
     }
-    footer{
-        align-content: center;
-        font-size:1.1rem;
-        padding: 2rem;
-    }
 }
-
 
 /*
 .donacion{
@@ -431,66 +429,62 @@ footer{
     text-align: center;
 }
 */
-/*
+
 .donacion li{
     display: block;
 }
-*/
 
-/*
 #imgGaleria p{
     font-size: 2rem;
     text-align: center;
 }
-*/
 
-/*
 iframe{
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 40rem;
     width: 50rem;
 }
-*/
-/*
+
+
 #formAdopcion{
     text-align: left;
     margin-left: 35rem;
     margin-right: 40rem;
     margin-bottom: 5rem;
 }
-*/
-/*
+
+
 #formAdopcion div{
     font-size: 1.2rem;
     padding: 0.5rem;
 }
-*/
-/*
+
+
 #formContacto{
     text-align: left;
     margin-left: 40rem;
     margin-right: 40rem;
     margin-bottom: 5rem;
 }
-*/
-/*
+
+
 #formContacto div{
     font-size: 1.2rem;
     padding: 0.5rem;
 }
-*/
-/*
+
+
 legend{
     font-weight: bolder;
     font-size: 1.3rem;
 }
-*/
-/*
+
+
 .nosotros{
     font-size: 1.6rem;
     text-align: center;
     margin-left: 3rem;
     margin-right: 3rem;
 }
-*/
+
