@@ -350,7 +350,7 @@ footer{
         margin-bottom: 3rem;
     }
 }
-@media screen and (max-width:673px){
+@media screen and (max-width:554px){
     #grillaIndex {
         grid-template-rows: 125px 260px auto 50px;
     }
