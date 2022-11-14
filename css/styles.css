@@ -18,6 +18,11 @@ body{
     background-color: rgba(143,152,157,0.60);
 }
 
+#backgroundDiferente{
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+}
+
 #grillaIndex{
     display: grid;
     /*declaro columnas*/
@@ -420,13 +425,29 @@ footer{
     }
 }
 
+#nosotrosFlex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#nosotrosFlex h1{
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+#ayuda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /*
 .donacion{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
 }
-*/
+
 
 .donacion li{
     display: block;
@@ -485,4 +506,4 @@ legend{
     margin-left: 3rem;
     margin-right: 3rem;
 }
-
+*/
