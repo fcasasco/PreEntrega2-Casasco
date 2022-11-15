@@ -196,7 +196,7 @@ footer{
     text-align: center;
 }
 
-#formFlex{
+#formFlex, #contactoFlex{
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -207,10 +207,39 @@ footer{
 #formAdopcion h1{
     margin-bottom: 2rem;
 }
+
 #formAdopcion div{
     font-size: 1.2rem;
     padding: 0.5rem;
 }
+
+#contactoFlex h1{
+    margin-top: 7rem;
+}
+
+fieldset{
+    border:#d81159 solid 0.5rem;
+    padding:2rem;
+}
+
+fieldset div{
+    padding: 0.5rem;
+}
+
+/*
+#imgGaleria p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+iframe{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 40rem;
+    width: 50rem;
+}*/
+
+
 /*MEDIA QUERY desde pantalla de televisor hd a celular*/
 
 @media screen and (max-width:1271px) {
@@ -442,7 +471,7 @@ footer{
         font-size:1rem;
         padding: 2rem;
     }
-    #footerNosotros, #footerForm{
+    #footerNosotros, #footerForm, #footerContacto{
         padding:0rem;
     }
 }
@@ -490,58 +519,13 @@ footer{
     .testimonioAdoptante{
         font-size: 1rem;
     }
+    #contactoFlex h1{
+        margin-top: 12rem;
+    }
 }
 
 
 
 
-/*MEDIA QUERY DE NOSOTROS: FALTA HACER: SE ROMPE EN 556...ARREGLAR TAMAÑO DE TITULOS VER COMO SE VE EN PC Y CELULAR*/
 
 
-/*
-#imgGaleria p{
-    font-size: 2rem;
-    text-align: center;
-}
-
-iframe{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 40rem;
-    width: 50rem;
-}
-
-
-#formAdopcion{
-    text-align: left;
-    margin-left: 35rem;
-    margin-right: 40rem;
-    margin-bottom: 5rem;
-}
-
-
-#formAdopcion div{
-    font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-
-#formContacto{
-    text-align: left;
-    margin-left: 40rem;
-    margin-right: 40rem;
-    margin-bottom: 5rem;
-}
-
-
-#formContacto div{
-    font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-
-legend{
-    font-weight: bolder;
-    font-size: 1.3rem;
-}
-*/
