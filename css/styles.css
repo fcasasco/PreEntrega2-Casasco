@@ -17,11 +17,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: rgba(143,152,157,0.60);
 }
-/*me guardo este estilo porque todavia no me convence
-#backgroundDiferente{
-    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
- 	background-blend-mode: normal, multiply;
-}*/
 
 #grillaIndex{
     display: grid;
@@ -89,7 +84,7 @@ h1{
     grid-area: carrousel;
 }
 
-#carouselExampleIndicators{/*ver si puedo ponerle transform scale*/
+#carouselExampleIndicators{
     width:24%;
     margin: 0 auto;
 }
@@ -226,18 +221,42 @@ fieldset div{
     padding: 0.5rem;
 }
 
-/*
-#imgGaleria p{
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+.imgGaleria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border: #d81159 solid 1rem;
+    gap:1rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    padding:1rem;
+}
+
+.imgGaleria p{
     font-size: 2rem;
     text-align: center;
 }
 
-iframe{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 40rem;
-    width: 50rem;
-}*/
+.videoGaleria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.videoGaleria div h3{
+    margin-top: 3rem;
+}
 
 
 /*MEDIA QUERY desde pantalla de televisor hd a celular*/
@@ -279,6 +298,7 @@ iframe{
         margin-top: 3rem;
     }
 }
+
 @media screen and (max-width:1024px) {
     #grillaIndex {
         grid-template-rows: 125px 450px auto 50px;
@@ -449,6 +469,7 @@ iframe{
         font-size: 1.3rem;
     }
 }
+
 @media screen and (max-width:555px){
     #grillaIndex{
         grid-template-rows: 125px 260px auto 50px;
@@ -471,7 +492,7 @@ iframe{
         font-size:1rem;
         padding: 2rem;
     }
-    #footerNosotros, #footerForm, #footerContacto{
+    #footerNosotros, #footerForm, #footerContacto, #footerGaleria{
         padding:0rem;
     }
 }
